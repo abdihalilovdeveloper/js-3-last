@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  padding: 20px 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-start {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-order {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header-end {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header-start h5 {
+  color: #0c76d8;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-start p {
+  color: #2a2d46;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.header-nav a {
+  color: #2a2d46;
+  font-size: 15px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.header-nav a:hover {
+  color: #0c76d8;
+}
+
+.header-order a {
+  color: #2a2d46;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.header-order button {
+  width: 130px;
+  height: 30px;
+  border: 1px solid #eb2d66;
+  background: transparent;
+  color: #eb2d66;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.header-order button:hover {
+  background: #eb2d66;
+  color: white;
+  transform: scale(1.1);
+}
+
+.header-end ion-icon {
+  color: #eb2d66;
+  font-size: 30px;
+}
+
+select {
+  color: #2a2d46;
+  font-size: 12px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-right {
+  position: relative;
+}
+
+.drone {
+  position: absolute;
+  left: -165px;
+  top: 50px;
+  animation: drone 3s linear;
+}
+
+@keyframes drone {
+  0% {
+    transform: translateY(-500px);
+    width: 200px;
+  }
+  50% {
+    transform: translateX(-700px);
+  }
+  80% {
+    width: 400px;
+  }
+
+  100% {
+    width: 700px;
+  }
+}
+
+.drone-text {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+
+.drone-text h3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+}
+.drone-text p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.figure {
+  clip-path: inset(5% 20% 25% 10%);
+  width: 25px;
+  height: 25px;
+  background: white;
+  position: absolute;
+  right: 210px;
+  bottom: 130px;
+}
